@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="/logica-js-projeto_inicial/img/robot.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__conteudo">
+            <img src="./img/robot.png" alt="robô mergulhador" class="container__imagem-robo" />
+            <div class="container__informacoes">
+                <img src="./img/trophy.png" alt="ícone de um troféu" />
+                <div class="container__texto">
+                    <h1>Descubra o número secreto!</h1>
+                    <input type="number" id="chute" class="container__input" placeholder="Escolha um número de 1 a 50">
+                    <button onclick="fazerChute()" class="container__botao">Chutar</button>
+                    <p id="dica"></p>
+                    <p id="tentativas"></p>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modalContent">
+            <h1>ACERTOU!</h1>
+            <p id="mensagemVitoria"></p>
+            <button onclick="fecharModal()">Jogar Novamente</button>
+        </div>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+
+</html>
